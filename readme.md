@@ -40,3 +40,4 @@ en resumé, Docker est un outil puissant qui facilite la gestion des application
 - Création de volumes : Les volumes peuvent être créés à l'aide de la commande `docker volume create <nom_du_volume>`. Ils peuvent également être créés automatiquement lors de l'exécution d'un conteneur avec l'option `-v` ou `--mount`.
 - Montage de volumes : Les volumes peuvent être montés dans un conteneur en utilisant l'option `-v <nom_du_volume>:<chemin_dans_le_conteneur>` ou `--mount type=volume,source=<nom_du_volume>,target=<chemin_dans_le_conteneur>`.
 - Persistance des données : Les volumes permettent de conserver les données même après la suppression du conteneur. Cela est particulièrement utile pour les bases de données et les applications nécessitant une conservation des données.
+
