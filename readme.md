@@ -15,23 +15,23 @@ en resumé, Docker est un outil puissant qui facilite la gestion des application
 
 - Comandes:
 
-**docker ps** : affiche les conteneurs en cours d'exécution.
-**docker run nginx:latest** : exécute un conteneur basé sur l'image Nginx.
-**docker ps -a**  : affiche tous les conteneurs, y compris ceux qui sont arrêtés.
-**docker ps -q** : affiche uniquement les IDs des conteneurs en cours d'exécution.
-**docker ps -q -a** : affiche  les IDs de tous les conteneurs.
-**docker run -d nginx:latest** : exécute un conteneur Nginx en arrière-plan (détaché).
-**docker run --name mynginx -d -p 8080:80 nginx:latest** : exécute un conteneur Nginx nommé "mynginx", en mappant le port 80 du conteneur au port 8080 de l'hôte.
-**docker run -ti ubuntu /bin/bash** : exécute un conteneur Ubuntu et ouvre une session interactive avec un shell bash.
-**docker stop <container_id>** : arrête un conteneur en cours d'exécution.
-**docker rm <container_id>** : supprime un conteneur arrêté.
-**docker rm -f <container_id>** : force la suppression d'un conteneur en cours d'exécution.
-**docker images** : affiche les images Docker disponibles localement.
-**docker rmi <image_id>** : supprime une image Docker.
-**docker pull <image_name>** : télécharge une image Docker depuis un registre (comme Docker Hub).
-**docker build -t myapp:latest .** : construit une image Docker à partir d'un Dockerfile dans le répertoire courant et la nomme "myapp" avec le tag "latest".
-**docker exec -it <container_id> /bin/bash** : ouvre une session interactive dans un conteneur en cours d'exécution.
-
+* **docker ps** : affiche les conteneurs en cours d'exécution.
+* **docker run nginx:latest** : exécute un conteneur basé sur l'image Nginx.
+* **docker ps -a**  : affiche tous les conteneurs, y compris ceux qui sont arrêtés.
+* **docker ps -q** : affiche uniquement les IDs des conteneurs en cours d'exécution.
+* **docker ps -q -a** : affiche  les IDs de tous les conteneurs.
+* **docker run -d nginx:latest** : exécute un conteneur Nginx en arrière-plan (détaché).
+* **docker run --name mynginx -d -p 8080:80 nginx:latest** : exécute un conteneur Nginx nommé "mynginx", en mappant le port 80 du conteneur au port 8080 de l'hôte.
+* **docker run -ti ubuntu /bin/bash** : exécute un conteneur Ubuntu et ouvre une session interactive avec un shell bash.
+* **docker stop <container_id>** : arrête un conteneur en cours d'exécution.
+* **docker rm <container_id>** : supprime un conteneur arrêté.
+* **docker rm -f <container_id>** : force la suppression d'un conteneur en cours d'exécution.
+* **docker images** : affiche les images Docker disponibles localement.
+* **docker rmi <image_id>** : supprime une image Docker.
+* **docker pull <image_name>** : télécharge une image Docker depuis un registre (comme Docker Hub).
+* **docker build -t myapp:latest .** : construit une image Docker à partir d'un Dockerfile dans le répertoire courant et la nomme "myapp" avec le tag "latest".
+* **docker exec -it <container_id> /bin/bash** : ouvre une session interactive dans un conteneur en cours d'exécution.
+* 
 -Volumes:
 
 * Les volumes Docker sont des mécanismes de stockage persistants utilisés pour conserver les données générées et utilisées par les conteneurs Docker. Contrairement aux systèmes de fichiers temporaires des conteneurs, 
